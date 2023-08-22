@@ -77,6 +77,27 @@ class BfsGraph(var v: Int) {
         return false;
     }
 
+    fun findCycleUsingDFS(vertex: Int,visited: BooleanArray,parent: Int):Boolean{
+        visited[vertex]=true
+
+        adjList[vertex].forEachIndexed{ index,element->
+            run {
+
+                if (index != 0 && !visited[element]) {
+
+                    return findCycleUsingDFS(element, visited,vertex)
+                } else if (visited[element] && parent != element) {
+
+                    return true
+                }
+
+
+            }
+
+        }
+        return false
+    }
+
     fun dfs(vertex:Int, visited:BooleanArray){
            visited[vertex]=true
            print(" $vertex ")

@@ -100,10 +100,11 @@ fun main(args: Array<String>) {
     var bfsGraph=BfsGraph(4)
     bfsGraph.addEdge(0, 1);
     bfsGraph.addEdge(0, 2);
+
     bfsGraph.addEdge(0, 3);
-    bfsGraph.addEdge(2, 0);
-    bfsGraph.addEdge(2, 3);
-    bfsGraph.addEdge(3, 2);
+//    bfsGraph.addEdge(2, 0);
+//    bfsGraph.addEdge(2, 3);
+//    bfsGraph.addEdge(3, 0);
 
     bfsGraph.showGraph()
 
@@ -115,7 +116,7 @@ fun main(args: Array<String>) {
     bfsGraph.dfs(2,visited)
 
     visited=BooleanArray(4){ _ ->false}
-    var isCycle=bfsGraph.findCycleUsingBFS(0,visited,parent)
+    var isCycle=bfsGraph.findCycleUsingDFS(0,visited,-1)
 
     println(" cyle available: ${isCycle}")
 

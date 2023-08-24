@@ -96,29 +96,54 @@ fun getSubsequence(nums:ArrayList<Int>,index:Int){
 fun main(args: Array<String>) {
 
     // BFS ------------------>
+//
+//    var bfsGraph=BfsGraph(4)
+//    bfsGraph.addEdge(0, 1);
+//    bfsGraph.addEdge(0, 2);
+//
+//    bfsGraph.addEdge(0, 3);
+////    bfsGraph.addEdge(2, 0);
+////    bfsGraph.addEdge(2, 3);
+////    bfsGraph.addEdge(3, 0);
+//
+//    bfsGraph.showGraph()
+//
+//    println()
+//   bfsGraph.bfs(2)
+//    var visited=BooleanArray(4){ _ ->false}
+//    val parent=IntArray(4){_ -> -1}
+//    println("dfs-->")
+//    bfsGraph.dfs(2,visited)
+//
+//    visited=BooleanArray(4){ _ ->false}
+//    var isCycle=bfsGraph.findCycleUsingDFS(0,visited,-1)
+//
+//    println(" cyle available: ${isCycle}")
+//
+//    for(i in -1..1){
+//        println("i: {$i}")
+//    }
 
-    var bfsGraph=BfsGraph(4)
-    bfsGraph.addEdge(0, 1);
-    bfsGraph.addEdge(0, 2);
+    var grid = arrayOf(
+        charArrayOf('1','1','0','0','0'),
+        charArrayOf('1','1','0','0','0'),
+        charArrayOf('0','0','1','0','0'),
+        charArrayOf('0','0','0','1','1')
 
-    bfsGraph.addEdge(0, 3);
-//    bfsGraph.addEdge(2, 0);
-//    bfsGraph.addEdge(2, 3);
-//    bfsGraph.addEdge(3, 0);
 
-    bfsGraph.showGraph()
+    )
 
-    println()
-   bfsGraph.bfs(2)
-    var visited=BooleanArray(4){ _ ->false}
-    val parent=IntArray(4){_ -> -1}
-    println("dfs-->")
-    bfsGraph.dfs(2,visited)
+//    var grid = arrayOf(
+//        charArrayOf('1','1','1','1','1','1','1','1','1','1')
+//
+//
+//
+//    )
 
-    visited=BooleanArray(4){ _ ->false}
-    var isCycle=bfsGraph.findCycleUsingDFS(0,visited,-1)
+    var island=NumberOfIsland()
+    println("Number of island : ${island.numIslands(grid)}")
 
-    println(" cyle available: ${isCycle}")
+
 
 
 //    var map=HashMap<Int,Int>()

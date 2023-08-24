@@ -10,6 +10,8 @@ class RatInMaze {
         val yMoveList= intArrayOf(srcY,srcY,srcY-1,srcY+1 )  // j
         val moveList= charArrayOf('D','U','L','R')
 
+
+
         for(i in 0 until (xMoveList.size)){
             if(xMoveList[i] in 0 until n && yMoveList[i]in 0 until n && arr[xMoveList[i]][yMoveList[i]]==1
                 && vis[xMoveList[i]][yMoveList[i]]==0

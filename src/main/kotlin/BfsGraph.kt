@@ -28,6 +28,8 @@ class BfsGraph(var v: Int) {
         }
     }
 
+
+
     fun bfs(vertex:Int){
         val visited=BooleanArray(v)
 
@@ -79,7 +81,9 @@ class BfsGraph(var v: Int) {
 
     fun findCycleUsingDFS(vertex: Int,visited: BooleanArray,parent: Int):Boolean{
         visited[vertex]=true
+ //for(i in 1.. adjList[vertex].indices.last)
 
+        //var x=Array(2){BooleanArray(3){false} }
         adjList[vertex].forEachIndexed{ index,element->
             run {
 

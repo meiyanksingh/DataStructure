@@ -34,6 +34,7 @@ class ProvincesCount {
             if(!visited[i]){
                 ++count;
                 dfs(visited,i,isConnected)
+                //bfs(visited,i,isConnected)
 
             }
         }

@@ -1,4 +1,5 @@
 import dynamic_programming.Fibonacci
+import graph.ProvincesCount
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
 
@@ -123,6 +124,8 @@ fun main(args: Array<String>) {
 //    for(i in -1..1){
 //        println("i: {$i}")
 //    }
+
+    ProvincesCount().showNoOfProvince()
 
     var grid = arrayOf(
         charArrayOf('1','1','0','0','0'),

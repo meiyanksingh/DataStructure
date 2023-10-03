@@ -1,4 +1,5 @@
 import dynamic_programming.Fibonacci
+import graph.FloodFill
 import graph.ProvincesCount
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
@@ -136,6 +137,8 @@ fun main(args: Array<String>) {
 
     )
 
+    FloodFill().callSolution()
+
 //    var grid = arrayOf(
 //        charArrayOf('1','1','1','1','1','1','1','1','1','1')
 //
@@ -143,8 +146,8 @@ fun main(args: Array<String>) {
 //
 //    )
 
-    var island=NumberOfIsland()
-    println("Number of island : ${island.numIslands(grid)}")
+//    var island=NumberOfIsland()
+//    println("Number of island : ${island.numIslands(grid)}")
 
 
 

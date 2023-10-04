@@ -1,6 +1,7 @@
 import dynamic_programming.Fibonacci
 import graph.FloodFill
 import graph.ProvincesCount
+import graph.RottingOrange
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
 
@@ -126,7 +127,7 @@ fun main(args: Array<String>) {
 //        println("i: {$i}")
 //    }
 
-    ProvincesCount().showNoOfProvince()
+    //ProvincesCount().showNoOfProvince()
 
     var grid = arrayOf(
         charArrayOf('1','1','0','0','0'),
@@ -137,7 +138,8 @@ fun main(args: Array<String>) {
 
     )
 
-    FloodFill().callSolution()
+    //FloodFill().callSolution()
+    RottingOrange().solution()
 
 //    var grid = arrayOf(
 //        charArrayOf('1','1','1','1','1','1','1','1','1','1')

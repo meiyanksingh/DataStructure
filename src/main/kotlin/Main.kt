@@ -1,7 +1,5 @@
-import dynamic_programming.Fibonacci
-import graph.FloodFill
-import graph.ProvincesCount
 import graph.RottingOrange
+import graph.TopologicalSort
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
 
@@ -100,7 +98,7 @@ fun main(args: Array<String>) {
 
     // BFS ------------------>
 //
-//    var bfsGraph=BfsGraph(4)
+//    var bfsGraph=graph.BfsGraph(4)
 //    bfsGraph.addEdge(0, 1);
 //    bfsGraph.addEdge(0, 2);
 //
@@ -141,6 +139,7 @@ fun main(args: Array<String>) {
     //FloodFill().callSolution()
     RottingOrange().solution()
 
+    TopologicalSort(8).callTopologicalSort();
 //    var grid = arrayOf(
 //        charArrayOf('1','1','1','1','1','1','1','1','1','1')
 //
@@ -148,7 +147,7 @@ fun main(args: Array<String>) {
 //
 //    )
 
-//    var island=NumberOfIsland()
+//    var island=graph.NumberOfIsland()
 //    println("Number of island : ${island.numIslands(grid)}")
 
 

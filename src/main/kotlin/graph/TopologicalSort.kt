@@ -14,6 +14,7 @@ class TopologicalSort(private var v: Int) {
         }
     }
 
+
     private fun addEdge(list:ArrayList<ArrayList<Int>>,v:Int, w:Int){
         list[v].add(w)
 
@@ -86,7 +87,7 @@ class TopologicalSort(private var v: Int) {
         }
 
         for(i in inorderList.indices){
-            println("=$i: ->${inorderList[i]}")
+
             if(inorderList[i]==0){
                 queue.add(i)
             }
@@ -112,6 +113,7 @@ class TopologicalSort(private var v: Int) {
             print(" ${tList[i]} ")
         }
     }
+
 
 
 }

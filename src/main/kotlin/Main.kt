@@ -1,3 +1,5 @@
+import graph.CourseSchedule
+import graph.CourseSchedule2
 import graph.RottingOrange
 import graph.TopologicalSort
 
@@ -138,6 +140,8 @@ fun main(args: Array<String>) {
 
     //FloodFill().callSolution()
     RottingOrange().solution()
+    CourseSchedule().callSolution()
+    CourseSchedule2().callSolution()
 
     TopologicalSort(8).callTopologicalSort();
 //    var grid = arrayOf(

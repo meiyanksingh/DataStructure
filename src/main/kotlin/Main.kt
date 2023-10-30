@@ -1,7 +1,4 @@
-import graph.CourseSchedule
-import graph.CourseSchedule2
-import graph.RottingOrange
-import graph.TopologicalSort
+import graph.*
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
 
@@ -139,11 +136,13 @@ fun main(args: Array<String>) {
     )
 
     //FloodFill().callSolution()
-    RottingOrange().solution()
-    CourseSchedule().callSolution()
-    CourseSchedule2().callSolution()
+//    RottingOrange().solution()
+//    CourseSchedule().callSolution()
+//    CourseSchedule2().callSolution()
+//
+//    TopologicalSort(8).callTopologicalSort();
 
-    TopologicalSort(8).callTopologicalSort();
+    WordLadder().solution()
 //    var grid = arrayOf(
 //        charArrayOf('1','1','1','1','1','1','1','1','1','1')
 //

@@ -8,14 +8,14 @@ class WordLadder {
     fun solution(){
         var list=ArrayList<String>()
         //["hot","dot","dog","lot","log","cog"]
-        list.add("a")
-        list.add("b")
-        list.add("c")
-//        list.add("lot")
-//        list.add("log")
-//        list.add("cog")
+        list.add("hot")
+        list.add("dot")
+        list.add("dog")
+        list.add("lot")
+        list.add("log")
+        list.add("cog")
 
-       var count= ladderLength("a","c",list)
+       var count= ladderLength("hit","cog",list)
         println("word ladder count $count")
     }
     fun ladderLength(beginWord: String, endWord: String, wordList: List<String>): Int {

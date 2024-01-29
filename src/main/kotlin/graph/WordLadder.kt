@@ -6,7 +6,7 @@ import kotlin.collections.ArrayList
 class WordLadder {
 
     fun solution(){
-        var list=ArrayList<String>()
+        val list=ArrayList<String>()
         //["hot","dot","dog","lot","log","cog"]
         list.add("hot")
         list.add("dot")
@@ -15,14 +15,14 @@ class WordLadder {
         list.add("log")
         list.add("cog")
 
-       var count= ladderLength("hit","cog",list)
+       val count= ladderLength("hit","cog",list)
         println("word ladder count $count")
     }
     fun ladderLength(beginWord: String, endWord: String, wordList: List<String>): Int {
-        var list= arrayListOf<String>()
+        val list= arrayListOf<String>()
         list.addAll(wordList)
 
-        var set=list.toMutableSet()
+        val set=list.toMutableSet()
 
 
 

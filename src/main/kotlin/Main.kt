@@ -1,4 +1,5 @@
 import graph.*
+import string.ReOrganizeString
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
 
@@ -142,7 +143,9 @@ fun main(args: Array<String>) {
 //
 //    TopologicalSort(8).callTopologicalSort();
 
-    WordLadder().solution()
+    ReOrganizeString().printReOrganizeString()
+
+//    WordLadder().solution()
 //    var grid = arrayOf(
 //        charArrayOf('1','1','1','1','1','1','1','1','1','1')
 //

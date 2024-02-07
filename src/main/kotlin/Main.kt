@@ -1,4 +1,5 @@
 import graph.*
+import string.GroupAnagram
 import string.ReOrganizeString
 
 val a=arrayOf(1,2,3,4,5,6,7,8);
@@ -143,7 +144,8 @@ fun main(args: Array<String>) {
 //
 //    TopologicalSort(8).callTopologicalSort();
 
-    ReOrganizeString().printReOrganizeString()
+  //  ReOrganizeString().printReOrganizeString()
+    GroupAnagram().solution()
 
 //    WordLadder().solution()
 //    var grid = arrayOf(
